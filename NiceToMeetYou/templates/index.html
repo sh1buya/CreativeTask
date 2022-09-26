@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+    <head>
+    <meta charset="utf-8">
+
+      <style>
+       img {
+        border: 10px solid #ffbc14;
+       }
+      </style>
+    </head>
+    <main>
+        <h1><span style="background-color: #ffbc14; color: #fff; display: inline-block;
+        padding: 3px 10px; font-weight: bold; border-radius: 10px;">
+        Информация обо мне: </span></h1>
+      <div class="container text-center">
+        <img src="{% static 'img/photo.jpg' %}">
+      </div>
+        <h2><span style="background-color: #ffbc14; color: #fff; display: inline-block;
+        padding: 3px 10px; font-weight: bold; border-radius: 10px;">&bull; {{name}} </span></h2>
+        <h2><span style="background-color: #ffbc14; color: #fff; display: inline-block;
+        padding: 3px 10px; font-weight: bold; border-radius: 10px;">&bull; {{city}} </span></h2>
+        <h2><span style="background-color: #ffbc14; color: #fff; display: inline-block;
+        padding: 3px 10px; font-weight: bold; border-radius: 10px;">• Увлечения:</span></h2>
+        <h2 style="color: #DBA100;">    • {{hobbies}}</h2>
+
+        <h2><span style="background-color: #ffbc14; color: #fff; display: inline-block;
+        padding: 3px 10px; font-weight: bold; border-radius: 10px;">• {{experience}}</span></h2>
+        <h2 style="color: #DBA100;">    1) Мэнеджер финансов PersonalFinance (PyQT)</h2>
+        <h2 style="color: #DBA100;">    2) Квест игра Haunted-Mansion (PyGame, командный)</h2>
+        <h2 style="color: #DBA100;">    3) Телеграм-бот SchoolSchedule (telegrambot) и вспомогательный веб-интерфейс (flask)</h2>
+
+        <h2><span style="background-color: #ffbc14; color: #fff; display: inline-block;
+        padding: 3px 10px; font-weight: bold; border-radius: 10px;">{{rosseti}}</span></h2>
+    </main>
+</html>
